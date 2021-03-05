@@ -1,15 +1,15 @@
-FROM golang:latest AS build
+#FROM golang:latest AS build
 
-ARG CGO_ENABLED=0
+#ARG CGO_ENABLED=0
 
-WORKDIR /workdir
+#WORKDIR /workdir
 
-COPY main.go .
+#COPY main.go .
 
-RUN go build main.go
+#RUN go build main.go
 
 FROM alpine:latest
 
-COPY --from=build /workdir/main /main
+#COPY --from=build /workdir/main /main
 
 ENTRYPOINT [ "/main" ]
