@@ -12,4 +12,4 @@ FROM alpine:latest
 
 COPY --from=build /workdir/main /main
 
-RUN [ "/main" ]
+ENTRYPOINT [ "/main" ]
