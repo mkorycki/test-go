@@ -2,4 +2,4 @@
 
 pwd
 
-ls -lah /tmp/s2i
+env
