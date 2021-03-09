@@ -2,4 +2,4 @@
 
 mv /tmp/src/main.go $HOME/
 
-go build
+go build main.go
