@@ -1,5 +1,0 @@
-#!/bin/bash
-
-mv /tmp/src/main.go $HOME/
-
-go build main.go
