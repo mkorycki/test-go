@@ -3,7 +3,7 @@ pipeline {
     stages {
         stage('build') {
             steps {
-                sh 'go build'
+                sh 'CGO_ENABLED=0 go build'
             }
         }
     }
